@@ -2,6 +2,11 @@
 function Button(props) {
 
     let count = 0;
+    
+    const handleClick = (e) => e.target.textContent = "I am clided event";
+
+    const handleDoubleClick = (e) => e.target.textContent = "I am double clided event";
+
     const handleClick2 = (name) => {
         if (count < 5) {
             console.log(`${name} Button clicked ${count} time${count > 1 ? 's' : ''}`);
@@ -11,7 +16,8 @@ function Button(props) {
     count++;
     }
 
-  return <button onClick={() => handleClick2(props.name)}>Click me</button>;
+    return <button onDoubleClick={(e) => handleDoubleClick(e)} onClick={(e) => handleClick(e)}>Click me event</button>;
+//    return <button onClick={() => handleClick2(props.name)}>Click me</button>;
 
 }
 
