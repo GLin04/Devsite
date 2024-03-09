@@ -3,7 +3,7 @@ import Footer from './Footer.jsx'
 import Card from './Card.jsx'
 import LoginCheck from './LoginCheck.jsx'
 import Posts from './Posts.jsx'
-import Button from './Button.jsx'
+import Button from './ButtonMessage.jsx'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
     return(
         <>
             <Header/>
-            <Button/>
+            <Button name="supserman" />
             <LoginCheck isLoggedIn={true} />
             <Card number={1} title="Cards" description="hello my name is card title"/>
             <Posts items={posts}/>

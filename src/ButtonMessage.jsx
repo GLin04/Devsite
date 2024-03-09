@@ -1,5 +1,5 @@
 
-function Button() {
+function Button(props) {
 
     let count = 0;
     const handleClick2 = (name) => {
@@ -11,7 +11,7 @@ function Button() {
     count++;
     }
 
-  return <button onClick={() => handleClick2("superman")}>Click me</button>;
+  return <button onClick={() => handleClick2(props.name)}>Click me</button>;
 
 }
 
