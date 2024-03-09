@@ -26,3 +26,10 @@
   font-size: 0.9em;
   margin-bottom: 0px;
 }
+
+.card .card-number {
+  font-family: Arial, sans-serif;
+  font-size: 0.9em;
+  position: relative;
+  left: 0;
+}

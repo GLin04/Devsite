@@ -1,6 +1,7 @@
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
+import LoginCheck from './LoginCheck.jsx'
 
 
 function App() {
@@ -8,9 +9,9 @@ function App() {
     return(
         <>
             <Header/>
-            <Card/>
-            <Card/>
-            <Card/>
+            <LoginCheck isLoggedIn={true} />
+            <Card number={1} title="Cards" description="hello my name is card title"/>
+            <Card></Card>
             <Footer/>
         </>
     )
