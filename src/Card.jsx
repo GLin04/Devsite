@@ -1,3 +1,5 @@
+import React from 'react'
+
 import stock from './assets/stock.jpeg'
 import PropTypes from 'prop-types'
 

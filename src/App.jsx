@@ -1,4 +1,4 @@
-import Todo from './components/Todo.jsx';
+import React from 'react'
 
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
@@ -25,7 +25,6 @@ function App() {
     return(
 
         <>
-            <Todo/>
             <Header/>
             <Button name="supserman" />
             <LoginCheck isLoggedIn={true} />
