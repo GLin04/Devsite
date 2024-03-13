@@ -1,3 +1,5 @@
+import Todo from './components/Todo.jsx';
+
 import Header from './Header.jsx'
 import Footer from './Footer.jsx'
 import Card from './Card.jsx'
@@ -21,7 +23,9 @@ function App() {
             {id:5, name:"megaposmegat 3", title:"posting mega 3", content:"this is a mega poster post of mega tree"}];
 
     return(
+
         <>
+            <Todo/>
             <Header/>
             <Button name="supserman" />
             <LoginCheck isLoggedIn={true} />
