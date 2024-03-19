@@ -1,8 +1,20 @@
-const express = require('express')
-const app = express()
+require('dotenv').config();
 
-app.get("/api", (req, res) => {
-    res.json({ "users": ["userOne", "userTwo", "userThree"] })
+const express = require('express');
+
+// Create an express app
+const app = express();
+
+
+app.use((req, res, next) => {
+    console.log(req.path, req.method)
+    next()
+})
+app.get('/', (req, res) => {
+    res.json({mssg: 'Welcome to the homepage!'})
 })
 
-app.listen(5000, () => { console.log("Server started on port 5000") })
+// listen for requests
+app.listen(process.env.PORT, () => {
+    console.log('Server is running on port', process.env.PORT);
+})
