@@ -6,6 +6,8 @@ import Card from './Card.jsx'
 import LoginCheck from './LoginCheck.jsx'
 import Posts from './Posts.jsx'
 import Button from './ButtonMessage.jsx'
+import './setupTests';
+
 
 
 function App() {
